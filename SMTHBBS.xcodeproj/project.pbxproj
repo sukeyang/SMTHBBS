@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		613C73BA74FC38EDD9ADA951 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BD323F0297223C83496417 /* libPods.a */; };
-		7545B5161C44D65900DBC22D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545B5151C44D65900DBC22D /* AppDelegate.swift */; };
-		7545B5181C44D65900DBC22D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545B5171C44D65900DBC22D /* ViewController.swift */; };
 		7545B51D1C44D65900DBC22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7545B51C1C44D65900DBC22D /* Assets.xcassets */; };
 		7545B52B1C44D65900DBC22D /* SMTHBBSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545B52A1C44D65900DBC22D /* SMTHBBSTests.swift */; };
 		7545B5361C44D65900DBC22D /* SMTHBBSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545B5351C44D65900DBC22D /* SMTHBBSUITests.swift */; };
+		756FDA471C80438F00D7C7BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA461C80438F00D7C7BA /* LoginViewController.swift */; };
+		756FDA4B1C80467E00D7C7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA4A1C80467E00D7C7BA /* AppDelegate.swift */; };
+		756FDA521C80471800D7C7BA /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA4D1C80471800D7C7BA /* Color+Extension.swift */; };
+		756FDA531C80471800D7C7BA /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA4E1C80471800D7C7BA /* UIBarButtonItem+Extension.swift */; };
+		756FDA541C80471800D7C7BA /* UIDevice + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA4F1C80471800D7C7BA /* UIDevice + Extension.swift */; };
+		756FDA551C80471800D7C7BA /* UIImage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA501C80471800D7C7BA /* UIImage + Extension.swift */; };
+		756FDA561C80471800D7C7BA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA511C80471800D7C7BA /* UIView+Extension.swift */; };
+		756FDA591C80486A00D7C7BA /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA581C80486A00D7C7BA /* AppConstant.swift */; };
+		756FDA5B1C8048FF00D7C7BA /* NSDate+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA5A1C8048FF00D7C7BA /* NSDate+String.swift */; };
+		756FDA5D1C80494E00D7C7BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA5C1C80494E00D7C7BA /* BaseViewController.swift */; };
+		756FDA5F1C80496000D7C7BA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA5E1C80496000D7C7BA /* BaseNavigationController.swift */; };
+		756FDA611C804E7900D7C7BA /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA601C804E7900D7C7BA /* UpImageDownTextButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +47,6 @@
 		436FFE3B5E06676BC35A25AA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5FD641617B3348EB4DA0EEAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7545B5121C44D65900DBC22D /* SMTHBBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMTHBBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7545B5151C44D65900DBC22D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		7545B5171C44D65900DBC22D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 		7545B51C1C44D65900DBC22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7545B5211C44D65900DBC22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7545B5261C44D65900DBC22D /* SMTHBBSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMTHBBSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +55,19 @@
 		7545B5311C44D65900DBC22D /* SMTHBBSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMTHBBSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7545B5351C44D65900DBC22D /* SMTHBBSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMTHBBSUITests.swift; sourceTree = "<group>"; };
 		7545B5371C44D65900DBC22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756FDA461C80438F00D7C7BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		756FDA4A1C80467E00D7C7BA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		756FDA4D1C80471800D7C7BA /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		756FDA4E1C80471800D7C7BA /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		756FDA4F1C80471800D7C7BA /* UIDevice + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice + Extension.swift"; sourceTree = "<group>"; };
+		756FDA501C80471800D7C7BA /* UIImage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Extension.swift"; sourceTree = "<group>"; };
+		756FDA511C80471800D7C7BA /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		756FDA581C80486A00D7C7BA /* AppConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		756FDA5A1C8048FF00D7C7BA /* NSDate+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+String.swift"; sourceTree = "<group>"; };
+		756FDA5C1C80494E00D7C7BA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		756FDA5E1C80496000D7C7BA /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		756FDA601C804E7900D7C7BA /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
+		756FDA621C80588500D7C7BA /* SMTHBBS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMTHBBS-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,14 +108,13 @@
 		752109BE1C7F07B800DA2BA2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				752109BF1C7F0B8C00DA2BA2 /* Common */,
-				752109C01C7F0B8C00DA2BA2 /* Demo */,
-				752109C41C7F0B8C00DA2BA2 /* Global */,
-				752109C51C7F0B8C00DA2BA2 /* Resources */,
 				752109C61C7F0B8C00DA2BA2 /* Src */,
+				756FDA481C80460400D7C7BA /* AppDelegate */,
+				756FDA491C80463000D7C7BA /* Constant */,
+				752109C41C7F0B8C00DA2BA2 /* Global */,
+				752109BF1C7F0B8C00DA2BA2 /* Common */,
 				752109C81C7F0B8C00DA2BA2 /* Utilities */,
-				7545B5151C44D65900DBC22D /* AppDelegate.swift */,
-				7545B5171C44D65900DBC22D /* ViewController.swift */,
+				752109C01C7F0B8C00DA2BA2 /* Demo */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -102,6 +122,8 @@
 		752109BF1C7F0B8C00DA2BA2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				756FDA571C8047DA00D7C7BA /* UIViewController */,
+				756FDA4C1C80471800D7C7BA /* Extension */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -148,12 +170,14 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Resources;
+			name = Resources;
+			path = SMTHBBS/Classes/Resources;
 			sourceTree = "<group>";
 		};
 		752109C61C7F0B8C00DA2BA2 /* Src */ = {
 			isa = PBXGroup;
 			children = (
+				756FDA381C80385600D7C7BA /* LoginView */,
 			);
 			path = Src;
 			sourceTree = "<group>";
@@ -169,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				7545B5141C44D65900DBC22D /* SMTHBBS */,
+				752109C51C7F0B8C00DA2BA2 /* Resources */,
 				7545B5291C44D65900DBC22D /* SMTHBBSTests */,
 				7545B5341C44D65900DBC22D /* SMTHBBSUITests */,
 				7545B5131C44D65900DBC22D /* Products */,
@@ -213,6 +238,78 @@
 				7545B5371C44D65900DBC22D /* Info.plist */,
 			);
 			path = SMTHBBSUITests;
+			sourceTree = "<group>";
+		};
+		756FDA381C80385600D7C7BA /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				756FDA391C80385600D7C7BA /* Controller */,
+				756FDA3A1C80385600D7C7BA /* Model */,
+				756FDA3B1C80385600D7C7BA /* View */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		756FDA391C80385600D7C7BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				756FDA461C80438F00D7C7BA /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		756FDA3A1C80385600D7C7BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		756FDA3B1C80385600D7C7BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		756FDA481C80460400D7C7BA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				756FDA621C80588500D7C7BA /* SMTHBBS-Bridging-Header.h */,
+				756FDA4A1C80467E00D7C7BA /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		756FDA491C80463000D7C7BA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				756FDA581C80486A00D7C7BA /* AppConstant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		756FDA4C1C80471800D7C7BA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				756FDA5A1C8048FF00D7C7BA /* NSDate+String.swift */,
+				756FDA4D1C80471800D7C7BA /* Color+Extension.swift */,
+				756FDA4E1C80471800D7C7BA /* UIBarButtonItem+Extension.swift */,
+				756FDA4F1C80471800D7C7BA /* UIDevice + Extension.swift */,
+				756FDA501C80471800D7C7BA /* UIImage + Extension.swift */,
+				756FDA511C80471800D7C7BA /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		756FDA571C8047DA00D7C7BA /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				756FDA601C804E7900D7C7BA /* UpImageDownTextButton.swift */,
+				756FDA5E1C80496000D7C7BA /* BaseNavigationController.swift */,
+				756FDA5C1C80494E00D7C7BA /* BaseViewController.swift */,
+			);
+			path = UIViewController;
 			sourceTree = "<group>";
 		};
 		807409A180164F9CDBA9C90D /* Frameworks */ = {
@@ -403,8 +500,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7545B5181C44D65900DBC22D /* ViewController.swift in Sources */,
-				7545B5161C44D65900DBC22D /* AppDelegate.swift in Sources */,
+				756FDA531C80471800D7C7BA /* UIBarButtonItem+Extension.swift in Sources */,
+				756FDA561C80471800D7C7BA /* UIView+Extension.swift in Sources */,
+				756FDA541C80471800D7C7BA /* UIDevice + Extension.swift in Sources */,
+				756FDA611C804E7900D7C7BA /* UpImageDownTextButton.swift in Sources */,
+				756FDA4B1C80467E00D7C7BA /* AppDelegate.swift in Sources */,
+				756FDA5B1C8048FF00D7C7BA /* NSDate+String.swift in Sources */,
+				756FDA5D1C80494E00D7C7BA /* BaseViewController.swift in Sources */,
+				756FDA521C80471800D7C7BA /* Color+Extension.swift in Sources */,
+				756FDA5F1C80496000D7C7BA /* BaseNavigationController.swift in Sources */,
+				756FDA471C80438F00D7C7BA /* LoginViewController.swift in Sources */,
+				756FDA551C80471800D7C7BA /* UIImage + Extension.swift in Sources */,
+				756FDA591C80486A00D7C7BA /* AppConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,11 +635,14 @@
 			baseConfigurationReference = 436FFE3B5E06676BC35A25AA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = SMTHBBS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiuhaoHealth.SMTHBBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangshuo/Desktop/康讯4.3/SMTHBBS/SMTHBBS/SMTHBBS/Classes/AppDelegate/SMTHBBS-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -541,11 +651,14 @@
 			baseConfigurationReference = 5FD641617B3348EB4DA0EEAD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = SMTHBBS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jiuhaoHealth.SMTHBBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangshuo/Desktop/康讯4.3/SMTHBBS/SMTHBBS/SMTHBBS/Classes/AppDelegate/SMTHBBS-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

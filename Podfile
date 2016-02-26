@@ -1,1 +1,5 @@
-platform :ios, '7.0'
+platform :ios, '8.0'
+
+pod 'SnapKit'
+#OC库
+pod 'SDWebImage'

@@ -12,13 +12,43 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var loginViewController: LoginViewController?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+         buildKeyWindow()
         return true
     }
-
+    
+    deinit {
+        
+    }
+    
+    // MARK: - Public Method
+    private func buildKeyWindow() {
+        
+        window = UIWindow(frame: ScreenBounds)
+        window!.makeKeyAndVisible()
+        
+//        let isFristOpen = NSUserDefaults.standardUserDefaults().objectForKey("isFristOpenApp")
+//        
+//        if isFristOpen == nil {
+        loginViewController = LoginViewController()
+        window?.rootViewController = loginViewController
+//            NSUserDefaults.standardUserDefaults().setObject("isFristOpenApp", forKey: "isFristOpenApp")
+//        } else {
+//            loadADRootViewController()
+//        }
+    }
+    
+    private func setAppSubject() {
+//        let tabBarAppearance = UITabBar.appearance()
+//        tabBarAppearance.backgroundColor = UIColor.whiteColor()
+//        tabBarAppearance.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
+        let navBarnAppearance = UINavigationBar.appearance()
+        navBarnAppearance.translucent = false
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
