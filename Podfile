@@ -1,5 +1,7 @@
 platform :ios, '8.0'
 
-pod 'SnapKit'
+use_frameworks!
+pod 'SnapKit' ,'~>0.18.0'
 #OC库
-pod 'SDWebImage'
+pod 'Kingfisher', '~> 1.8'
+pod 'Alamofire', '~> 3.1.0'

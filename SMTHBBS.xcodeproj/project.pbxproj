@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		613C73BA74FC38EDD9ADA951 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BD323F0297223C83496417 /* libPods.a */; };
+		5BB2A2BF062CAA77F0FFAC73 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66763369F1F4691441C1F069 /* Pods.framework */; };
 		7545B51D1C44D65900DBC22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7545B51C1C44D65900DBC22D /* Assets.xcassets */; };
 		7545B52B1C44D65900DBC22D /* SMTHBBSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545B52A1C44D65900DBC22D /* SMTHBBSTests.swift */; };
 		7545B5361C44D65900DBC22D /* SMTHBBSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7545B5351C44D65900DBC22D /* SMTHBBSUITests.swift */; };
@@ -23,6 +23,8 @@
 		756FDA5D1C80494E00D7C7BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA5C1C80494E00D7C7BA /* BaseViewController.swift */; };
 		756FDA5F1C80496000D7C7BA /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA5E1C80496000D7C7BA /* BaseNavigationController.swift */; };
 		756FDA611C804E7900D7C7BA /* UpImageDownTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756FDA601C804E7900D7C7BA /* UpImageDownTextButton.swift */; };
+		758EC5911C83ED410003BE19 /* LoadAnimatImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758EC5901C83ED410003BE19 /* LoadAnimatImageView.swift */; };
+		758EC5931C8429430003BE19 /* NSString+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758EC5921C8429430003BE19 /* NSString+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,9 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16BD323F0297223C83496417 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		436FFE3B5E06676BC35A25AA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5FD641617B3348EB4DA0EEAD /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		66763369F1F4691441C1F069 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7545B5121C44D65900DBC22D /* SMTHBBS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMTHBBS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7545B51C1C44D65900DBC22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7545B5211C44D65900DBC22D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		756FDA5E1C80496000D7C7BA /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		756FDA601C804E7900D7C7BA /* UpImageDownTextButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpImageDownTextButton.swift; sourceTree = "<group>"; };
 		756FDA621C80588500D7C7BA /* SMTHBBS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SMTHBBS-Bridging-Header.h"; sourceTree = "<group>"; };
+		758EC5901C83ED410003BE19 /* LoadAnimatImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadAnimatImageView.swift; sourceTree = "<group>"; };
+		758EC5921C8429430003BE19 /* NSString+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				613C73BA74FC38EDD9ADA951 /* libPods.a in Frameworks */,
+				5BB2A2BF062CAA77F0FFAC73 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +302,7 @@
 				756FDA4F1C80471800D7C7BA /* UIDevice + Extension.swift */,
 				756FDA501C80471800D7C7BA /* UIImage + Extension.swift */,
 				756FDA511C80471800D7C7BA /* UIView+Extension.swift */,
+				758EC5921C8429430003BE19 /* NSString+extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -305,6 +310,7 @@
 		756FDA571C8047DA00D7C7BA /* UIViewController */ = {
 			isa = PBXGroup;
 			children = (
+				758EC5901C83ED410003BE19 /* LoadAnimatImageView.swift */,
 				756FDA601C804E7900D7C7BA /* UpImageDownTextButton.swift */,
 				756FDA5E1C80496000D7C7BA /* BaseNavigationController.swift */,
 				756FDA5C1C80494E00D7C7BA /* BaseViewController.swift */,
@@ -315,7 +321,7 @@
 		807409A180164F9CDBA9C90D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				16BD323F0297223C83496417 /* libPods.a */,
+				66763369F1F4691441C1F069 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -509,7 +515,9 @@
 				756FDA5D1C80494E00D7C7BA /* BaseViewController.swift in Sources */,
 				756FDA521C80471800D7C7BA /* Color+Extension.swift in Sources */,
 				756FDA5F1C80496000D7C7BA /* BaseNavigationController.swift in Sources */,
+				758EC5931C8429430003BE19 /* NSString+extension.swift in Sources */,
 				756FDA471C80438F00D7C7BA /* LoginViewController.swift in Sources */,
+				758EC5911C83ED410003BE19 /* LoadAnimatImageView.swift in Sources */,
 				756FDA551C80471800D7C7BA /* UIImage + Extension.swift in Sources */,
 				756FDA591C80486A00D7C7BA /* AppConstant.swift in Sources */,
 			);
@@ -636,11 +644,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang shuo (DMA2ALV7ZK)";
 				INFOPLIST_FILE = SMTHBBS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jiuhaoHealth.SMTHBBS;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DSNAPKIT_DEPLOYMENT_LEGACY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9haohealth.SMTHBBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "114874cc-58ee-46b1-949a-cfdb67bcedf8";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangshuo/Desktop/康讯4.3/SMTHBBS/SMTHBBS/SMTHBBS/Classes/AppDelegate/SMTHBBS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -652,11 +663,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer: yang shuo (DMA2ALV7ZK)";
 				INFOPLIST_FILE = SMTHBBS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jiuhaoHealth.SMTHBBS;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DSNAPKIT_DEPLOYMENT_LEGACY";
+				PRODUCT_BUNDLE_IDENTIFIER = com.9haohealth.SMTHBBS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "114874cc-58ee-46b1-949a-cfdb67bcedf8";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/yangshuo/Desktop/康讯4.3/SMTHBBS/SMTHBBS/SMTHBBS/Classes/AppDelegate/SMTHBBS-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

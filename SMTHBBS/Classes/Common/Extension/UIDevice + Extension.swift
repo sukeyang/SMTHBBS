@@ -15,11 +15,11 @@ extension UIDevice {
     class func currentDeviceScreenMeasurement() -> CGFloat {
         var deviceScree: CGFloat = 3.5
         
-        if ((568 == ScreenHeight && 320 == ScreenWidth) || (1136 == ScreenHeight && 640 == ScreenWidth)) {
+        if ((568 == kScreenHeight && 320 == kScreenWidth) || (1136 == kScreenHeight && 640 == kScreenWidth)) {
             deviceScree = 4.0;
-        } else if ((667 == ScreenHeight && 375 == ScreenWidth) || (1334 == ScreenHeight && 750 == ScreenWidth)) {
+        } else if ((667 == kScreenHeight && 375 == kScreenWidth) || (1334 == kScreenHeight && 750 == kScreenWidth)) {
             deviceScree = 4.7;
-        } else if ((736 == ScreenHeight && 414 == ScreenWidth) || (2208 == ScreenHeight && 1242 == ScreenWidth)) {
+        } else if ((736 == kScreenHeight && 414 == kScreenWidth) || (2208 == kScreenHeight && 1242 == kScreenWidth)) {
             deviceScree = 5.5;
         }
         

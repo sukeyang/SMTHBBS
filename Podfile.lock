@@ -1,12 +1,16 @@
 PODS:
-  - SDWebImage (3.7.5):
-    - SDWebImage/Core (= 3.7.5)
-  - SDWebImage/Core (3.7.5)
+  - Alamofire (3.1.5)
+  - Kingfisher (1.9.3)
+  - SnapKit (0.18.0)
 
 DEPENDENCIES:
-  - SDWebImage
+  - Alamofire (~> 3.1.0)
+  - Kingfisher (~> 1.8)
+  - SnapKit (~> 0.18.0)
 
 SPEC CHECKSUMS:
-  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Kingfisher: 9e37d2a78a082dc123bfe8a16de65de85518daae
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 
 COCOAPODS: 0.39.0

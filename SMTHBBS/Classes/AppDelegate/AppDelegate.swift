@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Public Method
     private func buildKeyWindow() {
         
-        window = UIWindow(frame: ScreenBounds)
+        window = UIWindow(frame: kScreenBounds)
         window!.makeKeyAndVisible()
         
 //        let isFristOpen = NSUserDefaults.standardUserDefaults().objectForKey("isFristOpenApp")
@@ -45,8 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let tabBarAppearance = UITabBar.appearance()
 //        tabBarAppearance.backgroundColor = UIColor.whiteColor()
 //        tabBarAppearance.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
-        let navBarnAppearance = UINavigationBar.appearance()
-        navBarnAppearance.translucent = false
+        //设置导航栏主题
+        let navAppearance = UINavigationBar.appearance()
+        // 设置导航titleView字体
+        navAppearance.translucent = false
+        navAppearance.titleTextAttributes = [NSFontAttributeName : theme.SDNavTitleFont, NSForegroundColorAttributeName : UIColor.blackColor()]
+        
+        let item = UIBarButtonItem.appearance()
+        item.setTitleTextAttributes([NSFontAttributeName : theme.SDNavItemFont, NSForegroundColorAttributeName : UIColor.blackColor()], forState: .Normal)
     }
     
     func applicationWillResignActive(application: UIApplication) {

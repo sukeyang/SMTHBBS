@@ -27,7 +27,7 @@ class BaseNavigationController: UINavigationController {
         backBtn.addTarget(self, action: "backBtnClick", forControlEvents: .TouchUpInside)
         backBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignment.Left
         backBtn.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
-        let btnW: CGFloat = ScreenWidth > 375.0 ? 50 : 44
+        let btnW: CGFloat = kScreenWidth > 375.0 ? 50 : 44
         backBtn.frame = CGRectMake(0, 0, btnW, 40)
         
         return backBtn

@@ -52,4 +52,31 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
+    
+    class func createImageWithColor (color: UIColor)-> UIImage{
+        let rect = CGRectMake(0, 0,1.0, 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let ref = UIGraphicsGetCurrentContext()
+        CGContextSetAlpha(ref, 1.0)
+        CGContextSetFillColorWithColor(ref, color.CGColor)
+        CGContextFillRect(ref, rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
+    
+    class func createImageWithColor (color: UIColor,alpha:CGFloat)-> UIImage{
+        let rect = CGRectMake(0, 0,1.0, 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let ref = UIGraphicsGetCurrentContext()
+        CGContextSetAlpha(ref, alpha)
+        CGContextSetFillColorWithColor(ref, color.CGColor)
+        CGContextFillRect(ref, rect)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return image
+    }
 }
